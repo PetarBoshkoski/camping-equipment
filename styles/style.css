@@ -127,3 +127,17 @@ a {
     width: 5%;
     height: 5%;
 }
+
+@media screen and (max-width: 768px) {
+    .showcase .showcase-title {
+        z-index: 11;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        top: 25%;
+        text-align: left;
+        left: 0;
+        margin-left: 10px;
+    }
+}
