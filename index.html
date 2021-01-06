@@ -18,11 +18,12 @@
 
 
 <body>
-    <main>
+    <section id="main" class="main">
+
         <section class='showcase'>
             <nav>
                 <div class="logo">CampingBud</div>
-                <div class="menu"><i class="fas fa-bars"></i></div>
+                <div id="menu" class="menu"></div>
             </nav>
             <div class='video-container'>
                 <video src='burning_charcoal.mov' autoplay loop muted />
@@ -40,14 +41,17 @@
             </div>
             <div class="card-container">
                 <div class="card">
+                    <div class="overlay"></div>
                     <div class="image">
                         <img src="https://images.pexels.com/photos/771308/pexels-photo-771308.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Build shelter" />
                     </div>
+
                     <div class="card-description">
                         Learn secrets for building shelter
                     </div>
                 </div>
                 <div class="card">
+                    <div class="overlay"></div>
                     <div class="image">
                         <img src="https://lh3.googleusercontent.com/proxy/eLmkTOeT0fYlkl4KTg5M1sP_GZwqJEhw-CC43-fetDu9XHFHtsooleglAXDwSNRzhaXLEZAa7FlJmJeggu9VXTzPjhboCHemSEpi1nJoty3jet66BnBqRpMnwE56rnX2E9In17vG791carxhfzUkkU_4FQ" alt="Cooking recipes" />
                     </div>
@@ -56,6 +60,7 @@
                     </div>
                 </div>
                 <div class="card">
+                    <div class="overlay"></div>
                     <div class="image">
                         <img src="https://images.pexels.com/photos/640781/pexels-photo-640781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Survival skills" />
                     </div>
@@ -64,6 +69,7 @@
                     </div>
                 </div>
                 <div class="card">
+                    <div class="overlay"></div>
                     <div class="image">
                         <img src="https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Fire starter" />
                     </div>
@@ -72,6 +78,7 @@
                     </div>
                 </div>
                 <div class="card">
+                    <div class="overlay"></div>
                     <div class="image">
                         <img src="https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Water drinking" />
                     </div>
@@ -80,6 +87,7 @@
                     </div>
                 </div>
                 <div class="card">
+                    <div class="overlay"></div>
                     <div class="image">
                         <img src="https://images.pexels.com/photos/640809/pexels-photo-640809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Collecting trees" />
                     </div>
@@ -102,32 +110,67 @@
                 </div>
             </div>
         </section>
-    </main>
+        <footer>
+            <div class="footer-elements">
+                <span>Shipping policy</span>
+                <span>Satisfaction testimonals</span>
+                <span>Instructions</span>
+                <span>Site map</span>
+                <span>Terms & Conditions</span>
+                <span>Privacy policy</span>
+                <span>FAQ</span>
+                <span>Contact us</span>
+                <span>Returns</span>
+            </div>
+            <div class="footer-elements">
+                <span>Brands</span>
+                <span>Account</span>
+                <span>Wish list</span>
+                <span>Orders</span>
+                <span>Certificates</span>
+            </div>
+        </footer>
+        <div class="under-footer">
+            <div class="logo-footer">CampingBud</div>
+            <div class="contact"> <i class="far fa-envelope-open"></i> &nbsp; Contact us</div>
+        </div>
+    </section>
 
-    <footer>
-        <div class="footer-elements">
-            <span>Shipping policy</span>
-            <span>Satisfaction testimonals</span>
-            <span>Instructions</span>
-            <span>Site map</span>
-            <span>Terms & Conditions</span>
-            <span>Privacy policy</span>
-            <span>FAQ</span>
-            <span>Contact us</span>
-            <span>Returns</span>
-        </div>
-        <div class="footer-elements">
-            <span>Brands</span>
-            <span>Account</span>
-            <span>Wish list</span>
-            <span>Orders</span>
-            <span>Certificates</span>
-        </div>
-    </footer>
-    <div class="under-footer">
-        <div class="logo-footer">CampingBud</div>
-        <div class="contact"> <i class="far fa-envelope-open"></i> &nbsp; Contact us</div>
+    <div id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+                <a href="#">Build shelter</a>
+            </li>
+            <li>
+                <a href="#">Cooking recipes</a>
+            </li>
+            <li>
+                <a href="#">Survival skills</a>
+            </li>
+            <li>
+                <a href="#">Fire starter</a>
+            </li>
+            <li>
+                <a href="#">Potable water</a>
+            </li>
+            <li>
+                <a href="#">Tree cutting</a>
+            </li>
+        </ul>
     </div>
+
+    <script>
+        document.getElementById("menu").addEventListener("click", () => {
+            const icon = document.getElementById("menu");
+            const main = document.getElementById("main");
+            const menu = document.getElementById("nav-menu");
+            main.classList.toggle("active");
+            icon.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
+    </script>
 </body>
 
 </html>

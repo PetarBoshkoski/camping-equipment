@@ -6,6 +6,11 @@
     font-family: 'Exo 2', sans-serif;
 }
 
+section.active {
+    position: relative;
+    top: 200px;
+}
+
 nav {
     position: absolute;
     z-index: 10;
@@ -14,6 +19,25 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+nav .menu {
+    background: url("https://icon-library.com/images/three-bars-icon/three-bars-icon-6.jpg");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.2s;
+}
+
+nav .menu.active {
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
 }
 
 nav .logo,
@@ -135,10 +159,11 @@ a {
     color: #fff;
     font-size: 55px;
     margin: 0px 30px;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .pre-footer .social-wrapper i:hover {
+    transform: scale(1.05) translateY(-15px);
     color: #2a4e19;
 }
 
@@ -151,6 +176,7 @@ footer {
 }
 
 footer .footer-elements {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 10px 70px;
