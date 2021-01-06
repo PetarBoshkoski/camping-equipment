@@ -123,9 +123,32 @@ a {
     font-size: 20px;
 }
 
-.social-links img {
-    width: 5%;
-    height: 5%;
+.pre-footer .social-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(210, 39%, 9%);
+}
+
+.pre-footer .social-wrapper i {
+    color: #fff;
+    font-size: 55px;
+    margin: 0px 30px;
+    transition: 0.5s;
+}
+
+.pre-footer .social-wrapper i:hover {
+    color: #2a4e19;
+}
+
+footer {
+    height: 40vh;
+    padding: 25px 50px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
