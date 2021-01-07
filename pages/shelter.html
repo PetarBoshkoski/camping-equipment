@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/items.css">
+    <link rel="stylesheet" href="../styles/shelter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Build shelter</title>
+</head>
+
+<body>
+    <main id="shelter" class="shelter">
+        <nav class="shelter-nav">
+            <div class="logo"><a href="/">CampingBud</a></div>
+            <div id="menu" class="menu"></div>
+        </nav>
+        <section class="shelter-content">
+
+            <div class="shelter-showcase">
+                <div class="showcase-wrapper">
+                    <img class="showcase-image" src="https://images.unsplash.com/photo-1504770197335-6dcbb939cdc1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=500&q=60" />
+                    <div class="shelter-showcase-description">
+                        <div class="first-title">Lorem, ipsum dolor.</div>
+                        <div class="under-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, sint?</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="pre-footer">
+        <div class="social-wrapper">
+            <div>
+                <a href="https://www.facebook.com/mcpepi97/" target="_blank" alt="Facebook" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div>
+                <a href="https://github.com/PetarBoshkoski" target="_blank" alt="Github" title="Github"><i class="fab fa-github"></i></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/petar-boshkoski-815970161/" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-elements">
+            <span>Shipping policy</span>
+            <span>Satisfaction testimonals</span>
+            <span>Instructions</span>
+            <span>Site map</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy policy</span>
+            <span>FAQ</span>
+            <span>Contact us</span>
+            <span>Returns</span>
+        </div>
+        <div class="footer-elements">
+            <span>Brands</span>
+            <span>Account</span>
+            <span>Wish list</span>
+            <span>Orders</span>
+            <span>Certificates</span>
+        </div>
+    </footer>
+    <div class="under-footer">
+        <div class="logo-footer">CampingBud</div>
+        <div class="contact"> <i class="far fa-envelope-open"></i> &nbsp; Contact us</div>
+    </div>
+    <div id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./pages/shelter.html">Build shelter</a></li>
+            <li><a href="./recipes.html">Cooking recipes</a></li>
+            <li><a href="./survival.html">Survival skills</a></li>
+            <li><a href="#">Fire starter</a></li>
+            <li><a href="#">Potable water</a></li>
+            <li><a href="#">Tree cutting</a></li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("menu").addEventListener("click", () => {
+            const icon = document.getElementById("menu");
+            const main = document.getElementById("shelter");
+            const menu = document.getElementById("nav-menu");
+            main.classList.toggle("active");
+            icon.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
+    </script>
+</body>
+
+</html>

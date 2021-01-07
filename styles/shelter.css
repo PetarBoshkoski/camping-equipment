@@ -1,0 +1,67 @@
+.shelter {
+    background: #000;
+    min-height: 100vh;
+}
+
+.shelter.active {
+    position: relative;
+    top: 200px;
+}
+
+.shelter-nav {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shelter-nav .logo a {
+    color: #fff;
+}
+
+.shelter-content {
+    color: #fff;
+    min-height: 100vh;
+}
+
+.shelter-content .shelter-showcase {
+    height: 40vh;
+    background: #fff;
+}
+
+.shelter-content .shelter-showcase .showcase-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.shelter-content .shelter-showcase .showcase-wrapper .showcase-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description {
+    position: absolute;
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #A00008;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description .under-title {
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #A00008;
+    font-size: 20px;
+    font-weight: bold;
+}

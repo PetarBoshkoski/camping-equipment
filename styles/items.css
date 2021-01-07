@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .items {
     display: flow-root;
     min-height: 900px;
@@ -59,17 +63,17 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: red;
+    background: #A00008;
     opacity: 0.1;
 }
 
 .nav-menu {
     position: absolute;
     top: 0;
+    right: 0;
     height: 200px;
-    display: flex;
     width: 100%;
-    transition: 1s;
+    font-size: 16px;
     display: none;
 }
 
@@ -85,16 +89,19 @@
 
 .nav-menu.active ul {
     text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    text-align: center;
 }
 
 .nav-menu.active ul li {
+    display: inline-block;
     list-style-type: none;
     padding: 0px 15px;
+    transform: scale(1.05);
 }
 
 .nav-menu.active ul li a {
+    text-decoration: none;
     color: #fff;
 }
 
@@ -107,6 +114,10 @@
     height: 100%;
     background-repeat: no-repeat;
     object-fit: fill;
+}
+
+.main .logo a {
+    color: #fff;
 }
 
 .items .card .card-description {
@@ -143,6 +154,9 @@
         color: #fff;
         text-transform: capitalize;
         font-weight: bold;
+    }
+    .nav-menu {
+        font-size: 15px;
     }
     .nav-menu.active {
         width: 100%;
