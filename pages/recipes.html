@@ -7,56 +7,250 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/items.css">
     <link rel="stylesheet" href="../styles/shelter.css">
+    <link rel="stylesheet" href="../styles/recipes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Cooking recipes</title>
 </head>
 
 <body>
-    <main id="shelter" class="shelter">
+    <main id="recipes" class="recipes">
         <section>
-            <nav>
+            <nav class="recipes-nav">
                 <div class="logo"><a href="/">CampingBud</a></div>
                 <div id="menu" class="menu"></div>
             </nav>
+            <section class="recipes-content">
+                <div class="recipes-showcase">
+                    <div class="showcase-wrapper">
+                        <img class="showcase-image" src="https://images.unsplash.com/photo-1600209571393-a5975e80797f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+                        <div class="recipes-showcase-description">
+                            <div class="first-title">Lorem, ipsum.</div>
+                            <div class="under-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="recipes-main">
+                    <div class="element-title">
+                        <h1>Most delicious cooking recipes</h1>
+                    </div>
+                    <div class="recipes-element">
+                        <div class="element-tabs">
+                            <button class="tab-button" onclick="openRecipe(event, 'cranberry-salad')">Cranberry Salad</button>
+                            <button class="tab-button" onclick="openRecipe(event, 'roasted-chicken')">Juicy Roasted Chicken</button>
+                            <button class="tab-button" onclick="openRecipe(event, 'pork-stir-fry')">Pork Stir Fry</button>
+                            <button class="tab-button" onclick="openRecipe(event, 'corned-beef')">Corned Beef</button>
+                            <button class="tab-button" onclick="openRecipe(event, 'chocolate-brownies')">Chocolate Brownies</button>
+                        </div>
+                        <div class="t-content">
+                            <div id="cranberry-salad" class="tab-content recipe-element-wrapper">
+                                <div class="recipes-element-recipe">
+                                    <div class="recipe-image">
+                                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2879248.jpg&w=595&h=595&c=sc&poi=face&q=85" />
+                                    </div>
+                                    <div class="recipe-text">
+                                        <h1>Cranberry Salad</h1>
+                                        <div class="recipe-ingredients">
+                                            <p>1 (12 ounce) package fresh cranberries, finely chopped</p>
+                                            <p>½ cup white sugar</p>
+                                            <p>2 cups chopped apples</p>
+                                            <p>1 cup miniature marshmallows</p>
+                                            <p>½ cup chopped pecans</p>
+                                            <p>½ cup vanilla yogurt</p>
+                                            <p>1 cup frozen whipped topping (such as Cool Whip®), thawed</p>
+                                            <div class="prep-information">
+                                                <p><strong>Prep: </strong>20 mins</p>
+                                                <p><strong>Additional: </strong>3 hrs</p>
+                                                <p><strong>Total: </strong>3 hrs 20 mins</p>
+                                                <p><strong>Servings: </strong>10</p>
+                                                <p><strong>Yield: </strong>10 servings</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recipe-preparation">
+                                    <p>Combine chopped cranberries and sugar in a large, nonreactive bowl. Toss well. Cover and refrigerate for 3 hours.</p>
+                                    <p>After 3 hours, stir apples, marshmallows, and pecans into cranberries. Combine yogurt and whipped topping; fold into cranberry salad. Serve immediately.</p>
+                                </div>
+                            </div>
+                            <div id="roasted-chicken" class="tab-content recipe-element-wrapper">
+                                <div class="recipes-element-recipe">
+                                    <div class="recipe-image">
+                                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4725253.jpg&w=596&h=399&c=sc&poi=face&q=85" />
+                                    </div>
+                                    <div class="recipe-text">
+                                        <h1>Juicy Roasted Chicken</h1>
+                                        <div class="recipe-ingredients">
+                                            <p>1 (3 pound) whole chicken, giblets removed</p>
+                                            <p>salt and black pepper to taste</p>
+                                            <p>1 tablespoon onion powder, or to taste</p>
+                                            <p>½ cup margarine, divided</p>
+                                            <p>1 stalk celery, leaves removed</p>
+                                            <div class="prep-information">
+                                                <p><strong>Prep: </strong>10 mins</p>
+                                                <p><strong>Additional: </strong>1 hr 15 mins</p>
+                                                <p><strong>Total: </strong>15 mins</p>
+                                                <p><strong>Servings: </strong>6</p>
+                                                <p><strong>Yield: </strong>6 servings</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recipe-preparation">
+                                    <p>Preheat oven to 350 degrees F (175 degrees C).</p>
+                                    <p>Place chicken in a roasting pan, and season generously inside and out with salt and pepper. Sprinkle inside and out with onion powder. Place 3 tablespoons margarine in the chicken cavity. Arrange dollops of the remaining
+                                        margarine around the chicken's exterior. Cut the celery into 3 or 4 pieces, and place in the chicken cavity.</p>
+                                    <p>Bake uncovered 1 hour and 15 minutes in the preheated oven, to a minimum internal temperature of 180 degrees F (82 degrees C). Remove from heat, and baste with melted margarine and drippings. Cover with aluminum foil,
+                                        and allow to rest about 30 minutes before serving.</p>
+                                </div>
+                            </div>
+                            <div id="pork-stir-fry" class="tab-content recipe-element-wrapper">
+                                <div class="recipes-element-recipe">
+                                    <div class="recipe-image">
+                                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2024926.jpg&w=596&h=399&c=sc&poi=face&q=85" />
+                                    </div>
+                                    <div class="recipe-text">
+                                        <h1>Pork Stir Fry</h1>
+                                        <div class="recipe-ingredients">
+                                            <p>5 tablespoons reduced-sodium soy sauce</p>
+                                            <p>2 tablespoons rice wine vinegar & 1 tablespoon cornstarch</p>
+                                            <p>2 tablespoons sesame oil, divided</p>
+                                            <p>1 (1 pound) pork tenderloin, cut into strips</p>
+                                            <p>1 fresh red chile pepper, chopped</p>
+                                            <p>2 cloves garlic, minced & 1 onion, chopped</p>
+                                            <p>1 green bell pepper, chopped</p>
+                                            <p>1 head bok choy, leaves and stalks separated, chopped</p>
+                                            <p>2 crowns broccoli, chopped & 1 teaspoon ground ginger</p>
+                                            <div class="prep-information">
+                                                <p><strong>Prep: </strong>25 mins</p>
+                                                <p><strong>Additional: </strong>15 mins</p>
+                                                <p><strong>Total: </strong>40 mins</p>
+                                                <p><strong>Servings: </strong>6</p>
+                                                <p><strong>Yield: </strong>6 servings</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recipe-preparation">
+                                    <p>Whisk soy sauce, vinegar, and cornstarch together in a small bowl.</p>
+                                    <p>Heat 1 tablespoon oil in a wok over medium-high heat. Cook and stir tenderloin strips in hot oil until just browned, 2 to 4 minutes. Transfer pork to a plate and return wok to heat.</p>
+                                    <p>Heat remaining oil in the same skillet over medium-high heat. Cook and stir red chile pepper and garlic in hot oil until sizzling, 15 to 30 seconds. Add onion and green pepper to skillet; cook and stir until onion starts
+                                        to soften, 2 to 3 minutes. Stir chopped bok choy stalks into onion mixture; cook and stir until stems begin to soften, about 3 minutes.</p>
+                                    <p>Stir broccoli into bok choy mixture; cook and stir until slightly softened, about 2 minutes. Add pork, chopped bok choy leaves, and soy sauce mixture; cook and stir until well-combined. Season pork mixture with ginger;
+                                        cook and stir until bok choy starts to wilt and broccoli is tender, 5 to 7 minutes.</p>
+                                </div>
+                            </div>
+                            <div id="corned-beef" class="tab-content recipe-element-wrapper">
+                                <div class="recipes-element-recipe">
+                                    <div class="recipe-image">
+                                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7805029.jpg&q=85" />
+                                    </div>
+                                    <div class="recipe-text">
+                                        <h1>Instant Pot® Corned Beef</h1>
+                                        <div class="recipe-ingredients">
+                                            <p>2 cups water</p>
+                                            <p>1 (12 fluid ounce) can or bottle beer</p>
+                                            <p>4 cloves garlic, minced</p>
+                                            <p>1 (3 pound) corned beef brisket with spice packet</p>
+                                            <div class="prep-information">
+                                                <p><strong>Prep: </strong>5 mins</p>
+                                                <p><strong>Additional: </strong>2 hrs</p>
+                                                <p><strong>Total: </strong>2 hrs 5mins</p>
+                                                <p><strong>Servings: </strong>4</p>
+                                                <p><strong>Yield: </strong>4 servings</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recipe-preparation">
+                                    <p>Combine water, beer, and garlic in a multi-functional pressure cooker (such as Instant Pot®). Place trivet inside. Place brisket on the trivet and sprinkle spice packet on top. Close and lock the lid. Select high pressure
+                                        according to manufacturer's instructions; set timer for 90 minutes. Allow 10 to 15 minutes for pressure to build.</p>
+                                    <p>Release pressure carefully using the quick-release method according to manufacturer's instructions, about 5 minutes. Unlock and remove the lid. Transfer brisket to a baking sheet, cover with aluminum foil, and let rest
+                                        for 15 minutes.</p>
+                                </div>
+                            </div>
+                            <div id="chocolate-brownies" class="tab-content recipe-element-wrapper">
+                                <div class="recipes-element-recipe">
+                                    <div class="recipe-image">
+                                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1019885.jpg&w=596&h=596&c=sc&poi=face&q=85" />
+                                    </div>
+                                    <div class="recipe-text">
+                                        <h1>Chocolate Mint Dessert Brownies</h1>
+                                        <div class="recipe-ingredients">
+                                            <p>1 cup white sugar</p>
+                                            <p>½ cup butter, softened</p>
+                                            <p>4 eggs</p>
+                                            <p>1 ½ cups chocolate syrup</p>
+                                            <p>1 cup all-purpose flour</p>
+                                            <p>2 cups confectioners' sugar</p>
+                                            <p>½ cup butter, softened</p>
+                                            <p>2 tablespoons creme de menthe liqueur</p>
+                                            <p>6 tablespoons butter</p>
+                                            <p>1 cup semisweet chocolate chips</p>
+                                            <div class="prep-information">
+                                                <p><strong>Prep: </strong>15 mins</p>
+                                                <p><strong>Additional: </strong>1 hr 50 mins</p>
+                                                <p><strong>Total: </strong>2 hrs 5 mins</p>
+                                                <p><strong>Servings: </strong>24</p>
+                                                <p><strong>Yield: </strong>1 - 9<small>x</small>13 inch pan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recipe-preparation">
+                                    <p>Preheat oven to 350 degrees F (175 degrees C). Grease a 9x13 inch baking dish.</p>
+                                    <p>In a large bowl, cream together 1 cup sugar and 1/2 cup of softened butter until smooth. Beat in eggs one at a time, then stir in the chocolate syrup. Stir in the flour until just blended. Spread the batter evenly into
+                                        the prepared pan.</p>
+                                    <p>Bake for 25 to 30 minutes in the preheated oven, or until top springs back when lightly touched. Cool completely in the pan.</p>
+                                    <p>In a small bowl, beat the confectioners' sugar, 1/2 cup butter or margarine and creme de menthe until smooth. Spread evenly over the cooled brownies, then chill until set.</p>
+                                    <p>In a small bowl over simmering water, or in the microwave, melt the remaining 6 tablespoons of butter and the chocolate chips, stirring occasionally until smooth. Allow to cool slightly, then spread over the top of
+                                        the mint layer. Cover, and chill for at least 1 hour before cutting into squares.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="pre-footer">
+                    <div class="social-wrapper">
+                        <div>
+                            <a href="https://www.facebook.com/mcpepi97/" target="_blank" alt="Facebook" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/PetarBoshkoski" target="_blank" alt="Github" title="Github"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/petar-boshkoski-815970161/" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <div class="footer-elements">
+                        <span>Shipping policy</span>
+                        <span>Satisfaction testimonals</span>
+                        <span>Instructions</span>
+                        <span>Site map</span>
+                        <span>Terms & Conditions</span>
+                        <span>Privacy policy</span>
+                        <span>FAQ</span>
+                        <span>Contact us</span>
+                        <span>Returns</span>
+                    </div>
+                    <div class="footer-elements">
+                        <span>Brands</span>
+                        <span>Account</span>
+                        <span>Wish list</span>
+                        <span>Orders</span>
+                        <span>Certificates</span>
+                    </div>
+                </footer>
+                <div class="under-footer">
+                    <div class="logo-footer">CampingBud</div>
+                    <div class="contact"> <i class="far fa-envelope-open"></i> &nbsp; Contact us</div>
+                </div>
+            </section>
         </section>
     </main>
-    <section class="pre-footer">
-        <div class="social-wrapper">
-            <div>
-                <a href="https://www.facebook.com/mcpepi97/" target="_blank" alt="Facebook" title="Facebook"><i class="fab fa-facebook-square"></i></a>
-            </div>
-            <div>
-                <a href="https://github.com/PetarBoshkoski" target="_blank" alt="Github" title="Github"><i class="fab fa-github"></i></a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/petar-boshkoski-815970161/" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-elements">
-            <span>Shipping policy</span>
-            <span>Satisfaction testimonals</span>
-            <span>Instructions</span>
-            <span>Site map</span>
-            <span>Terms & Conditions</span>
-            <span>Privacy policy</span>
-            <span>FAQ</span>
-            <span>Contact us</span>
-            <span>Returns</span>
-        </div>
-        <div class="footer-elements">
-            <span>Brands</span>
-            <span>Account</span>
-            <span>Wish list</span>
-            <span>Orders</span>
-            <span>Certificates</span>
-        </div>
-    </footer>
-    <div class="under-footer">
-        <div class="logo-footer">CampingBud</div>
-        <div class="contact"> <i class="far fa-envelope-open"></i> &nbsp; Contact us</div>
-    </div>
+
     <div id="nav-menu" class="nav-menu">
         <ul>
             <li><a href="/">Home</a></li>
@@ -72,12 +266,53 @@
     <script>
         document.getElementById("menu").addEventListener("click", () => {
             const icon = document.getElementById("menu");
-            const main = document.getElementById("shelter");
+            const main = document.getElementById("recipes");
             const menu = document.getElementById("nav-menu");
             main.classList.toggle("active");
             icon.classList.toggle("active");
             menu.classList.toggle("active");
         })
+
+        const init = () => {
+            const firstElement = document.getElementById("cranberry-salad")
+            const content = document.getElementsByClassName("tab-content");
+            const buttons = document.getElementsByClassName("tab-button");
+            for (let i = 0; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+            firstElement.style.display = "block";
+            buttons[0].classList.add("active");
+        }
+
+        window.addEventListener('load', (event) => {
+            init();
+        });
+
+        const openRecipe = (event, elementId) => {
+            init();
+            const element = document.getElementById(elementId);
+            const buttons = document.getElementsByClassName("tab-button");
+            notFirstElement(elementId)
+            event.currentTarget.classList.add("active")
+            element.style.display = "block";
+        }
+
+        const notFirstElement = (elementId) => {
+            const buttons = document.getElementsByClassName("tab-button");
+            if (elementId != "cranberry-salad") {
+                removeActive(buttons);
+                const firstElement = document.getElementById("cranberry-salad")
+                firstElement.style.display = "none";
+            } else {
+                removeActive(buttons);
+            }
+        }
+
+        const removeActive = (buttons) => {
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+        }
     </script>
 </body>
 

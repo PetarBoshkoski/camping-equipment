@@ -1,0 +1,236 @@
+.recipes {
+    background: #000;
+    min-height: 100vh;
+}
+
+.recipes.active {
+    position: relative;
+    top: 200px;
+}
+
+.recipes-nav {
+    z-index: 10;
+    top: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #fff8dc;
+}
+
+.recipes-nav .logo a {
+    color: #fff;
+}
+
+.recipes-content {
+    color: #fff;
+    min-height: 100vh;
+}
+
+.recipes-content .recipes-showcase {
+    height: 40vh;
+    background: #fff;
+}
+
+.recipes-content .recipes-showcase .showcase-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.recipes-content .recipes-showcase .showcase-wrapper .showcase-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.recipes-content .recipes-showcase .showcase-wrapper .recipes-showcase-description {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    color: #fff8dc;
+    margin-top: -10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipes-content .recipes-showcase .showcase-wrapper .recipes-showcase-description .first-title {
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.recipes-content .recipes-showcase .showcase-wrapper .recipes-showcase-description .under-title {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.recipes-main {
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0px;
+    background: #000;
+}
+
+.recipes-main .element-title {
+    max-width: 1124px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+.recipes-main .recipes-element {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+
+.recipes-main .recipes-element p {
+    padding: 5px 0px;
+}
+
+.recipes-main .recipes-element .element-img img {
+    width: 100%;
+    min-height: 100%;
+    border: 1px dashed #fff;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #fff;
+    margin-top: 10px;
+    background: #778899;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe {
+    display: flex;
+    border-bottom: 1px solid #fff;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-image {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-image img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-text {
+    width: 60%;
+    text-align: left;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-text h1 {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: 2px solid #fff;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-text .recipe-ingredients p {
+    padding: 10px;
+}
+
+.recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-text .recipe-ingredients .prep-information {
+    border: 1px dashed #fff;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.recipes-main .recipes-element .element-tabs {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+}
+
+.recipes-main .recipes-element .element-tabs button {
+    cursor: pointer;
+    font-weight: 800;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    margin: 5px 3px;
+    border: 1px solid #8b0000;
+    transition: 0.5s;
+}
+
+.recipes-main .recipes-element .element-tabs button.active {
+    background: #f00;
+}
+
+.recipes-main .recipes-element .element-tabs button:focus {
+    outline: none;
+    border: 1px solid #8b0000;
+}
+
+.recipes-main .recipes-element .element-tabs button:hover {
+    letter-spacing: 1px;
+}
+
+#tab-content {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .recipes-content .recipes-showcase .showcase-wrapper .recipes-showcase-description {
+        margin-top: 20px;
+    }
+    .recipes-content .recipes-showcase .showcase-wrapper .recipes-showcase-description .first-title {
+        font-size: 25px;
+    }
+    .recipes-content .recipes-showcase .showcase-wrapper .recipes-showcase-description .under-title {
+        width: 80%;
+        font-size: 20px;
+    }
+    .recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #A00008;
+    }
+    .recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-image {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+        margin: 0;
+        padding: 0;
+    }
+    .recipes-main .recipes-element .recipe-element-wrapper .recipes-element-recipe .recipe-text {
+        width: 100%;
+        text-align: center;
+    }
+    .recipes-main .recipes-element .recipe-element-wrapper .recipe-preparation {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .recipes-main .recipes-element .element-tabs {
+        display: flex;
+        flex-direction: column;
+    }
+    .recipes-main .recipes-element .element-tabs button {
+        cursor: pointer;
+    }
+}

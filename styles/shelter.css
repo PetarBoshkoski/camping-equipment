@@ -9,13 +9,13 @@
 }
 
 .shelter-nav {
-    position: relative;
     z-index: 10;
     top: 0;
     color: #fff;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    border-bottom: 2px solid #fff8dc;
 }
 
 .shelter-nav .logo a {
@@ -39,29 +39,121 @@
 }
 
 .shelter-content .shelter-showcase .showcase-wrapper .showcase-image {
+    position: absolute;
     height: 100%;
     width: 100%;
-    position: absolute;
 }
 
 .shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description {
     position: absolute;
-    width: 100%;
-    padding: 30px 0px;
+    height: 100%;
+    z-index: 1;
     text-align: center;
+    width: 100%;
+    display: flex;
+    color: #fff8dc;
+    margin-top: -10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description .first-title {
     text-transform: uppercase;
-    color: #A00008;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
 }
 
 .shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description .under-title {
-    position: absolute;
-    width: 100%;
-    padding-top: 10px;
-    text-align: center;
     text-transform: capitalize;
-    color: #A00008;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+}
+
+.shelter-main {
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0px;
+    background: #000;
+}
+
+.shelter-main .element-title {
+    max-width: 1124px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+.shelter-main .shelter-element {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 10px;
+}
+
+.shelter-main .shelter-element p {
+    padding: 5px 0px;
+}
+
+.shelter-main .shelter-element .element-img {
+    width: 50%;
+    height: 50%;
+    margin-right: 25px;
+}
+
+.shelter-main .shelter-element .element-img img {
+    width: 100%;
+    min-height: 100%;
+    border: 1px dashed #fff;
+}
+
+.shelter-main .shelter-element .element-text {
+    width: 50%;
+    height: 50%;
+    margin-right: 25px;
+}
+
+.shelter-main .shelter-element .element-text h2 {
+    color: #3db120;
+}
+
+@media screen and (max-width: 768px) {
+    .shelter-main .element-title h1 {
+        padding: 5px 10px;
+    }
+    .shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description {
+        margin-top: 20px;
+    }
+    .shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description .first-title {
+        font-size: 25px;
+    }
+    .shelter-content .shelter-showcase .showcase-wrapper .shelter-showcase-description .under-title {
+        width: 80%;
+        font-size: 20px;
+    }
+    .shelter-main .shelter-element {
+        width: 100%;
+        min-height: 100%;
+        max-width: 1124px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .shelter-main .shelter-element .element-img {
+        width: 90%;
+        height: 90%;
+        margin-right: 25px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .shelter-main .shelter-element .element-text {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: left;
+        padding: 5px 10px;
+    }
 }
