@@ -230,6 +230,15 @@
     .survival-content .survival-showcase .showcase-wrapper .survival-showcase-description {
         margin-top: 20px;
     }
+    .survival-content .survival-main .survival-main-description .desc-title {
+        font-size: 25px;
+    }
+    .survival-content .survival-main .survival-main-description .desc-subtitle {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 0 auto;
+        font-size: 17px;
+    }
     .survival-content .survival-showcase .showcase-wrapper .survival-showcase-description .first-title {
         font-size: 25px;
     }
