@@ -31,6 +31,11 @@ html {
     letter-spacing: 2px;
 }
 
+.items .card-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .items .card-container .card {
     width: 30%;
     height: 300px;
@@ -131,7 +136,16 @@ html {
     font-weight: bold;
 }
 
+.items .card .card-description .card-description-strike {
+    text-decoration: line-through;
+    color: #d4babc;
+}
+
 @media screen and (max-width: 768px) {
+    .items .card-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
     .card-container {
         display: flex;
         justify-content: center;
@@ -142,7 +156,7 @@ html {
         height: 300px;
         background: #fff;
         position: relative;
-        margin: 10px;
+        margin: 10px auto;
         cursor: pointer;
     }
     .items .card .card-description {

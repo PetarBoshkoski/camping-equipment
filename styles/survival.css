@@ -1,0 +1,262 @@
+.survival {
+    background: #000;
+    min-height: 100%;
+}
+
+.survival.active {
+    position: relative;
+    top: 200px;
+}
+
+.survival-nav {
+    z-index: 10;
+    top: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #fff8dc;
+}
+
+.survival-nav .logo a {
+    color: #fff;
+}
+
+.survival-content {
+    color: #fff;
+    min-height: 100%;
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.survival-showcase {
+    height: 40vh;
+    background: #fff;
+}
+
+.survival-showcase .showcase-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.survival-showcase .showcase-wrapper .showcase-video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.survival-showcase .showcase-wrapper .survival-showcase-description {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    color: #fff8dc;
+    margin-top: -10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.survival-showcase .showcase-wrapper .survival-showcase-description .first-title {
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.survival-showcase .showcase-wrapper .survival-showcase-description .under-title {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.survival-content .survival-main .survival-main-tips-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.survival-content .survival-main {
+    width: 100%;
+    min-height: 100%;
+    padding: 50px 0px;
+    background: #000;
+}
+
+.survival-content .survival-main .survival-main-description {
+    margin: 40px 0px;
+}
+
+.survival-content .survival-main .survival-main-description .desc-title {
+    font-size: 30px;
+}
+
+.survival-content .survival-main .survival-main-description .desc-subtitle {
+    width: 75%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.survival-content .survival-main .survival-main-tips {
+    display: flex;
+    justify-content: center;
+}
+
+.survival-content .survival-main .survival-main-tips .survival-tip-card {
+    cursor: pointer;
+    min-height: 200px;
+    width: 30%;
+    border: 1px solid #A00008;
+    background: #fff;
+    margin: 10px 10px;
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.survival-content .survival-main .survival-main-tips .survival-tip-card .tip-image i {
+    font-size: 70px;
+}
+
+.survival-content .survival-main .survival-main-tips .survival-tip-card .tip-title {
+    font-weight: normal;
+    padding: 2px 25px;
+}
+
+.survival-content .survival-main .survival-main-tips .survival-tip-card:hover {
+    color: #b6852b;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper {
+    width: 100%;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes {
+    display: flex;
+    margin: 50px 0px;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .steps {
+    width: 50%;
+    margin: 10px;
+    border-right: 1px solid #fff;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .steps-title {
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px 10px;
+    border-bottom: 1px solid #b6852b;
+    width: 90%;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .steps .step {
+    display: flex;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .steps .step .step-number {
+    width: 5%;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .steps .step .step-number h1 {
+    text-decoration: underline;
+    color: #b6852b;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .steps .step .step-description {
+    width: 95%;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes {
+    width: 50%;
+    margin: 10px;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes .quotes-title {
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px 10px;
+    border-bottom: 1px solid #b6852b;
+    width: 90%;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes .quote {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes .quote,
+.quote-ratifier {
+    display: flex;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes .quote .quote-rating i {
+    cursor: pointer;
+    padding: 10px 5px 10px 0px;
+    color: #b6852b;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes .quote .quote-ratifier .ratifier-img {
+    width: 15%;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes .quote .quote-ratifier .ratifier-img img {
+    width: 100%;
+    border: 3px solid #777;
+    border-radius: 50%;
+}
+
+.survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes .quote .quote-ratifier .ratifier-name {
+    width: 85%;
+    padding: 20px 0px 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .survival-content .survival-showcase .showcase-wrapper .survival-showcase-description {
+        margin-top: 20px;
+    }
+    .survival-content .survival-showcase .showcase-wrapper .survival-showcase-description .first-title {
+        font-size: 25px;
+    }
+    .survival-content .survival-showcase .showcase-wrapper .survival-showcase-description .under-title {
+        width: 80%;
+        font-size: 20px;
+    }
+    .survival-content .survival-main .survival-main-tips {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .survival-content .survival-main .survival-main-tips .survival-tip-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .survival-content .survival-main .steps-quotes-wrapper .steps-quotes {
+        display: flex;
+        flex-direction: column;
+    }
+    .survival-content .survival-main .steps-quotes-wrapper .steps-quotes .steps {
+        width: 90%;
+        margin: 10px;
+        border: none
+    }
+    .survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes {
+        width: 90%;
+        margin: 10px;
+    }
+}
