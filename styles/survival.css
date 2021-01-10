@@ -15,7 +15,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 20vh;
     border-bottom: 2px solid #fff8dc;
+    position: relative;
 }
 
 .survival-nav .logo a {
@@ -30,15 +32,21 @@
     margin: 0 auto;
 }
 
+.showcase-wrapper {
+    height: 100%;
+}
+
 .survival-showcase {
     height: 40vh;
     background: #fff;
 }
 
 .survival-showcase .showcase-wrapper {
-    height: 100%;
+    height: 40vh;
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .survival-showcase .showcase-wrapper .showcase-video {
@@ -48,18 +56,21 @@
     object-fit: fill;
 }
 
-.survival-showcase .showcase-wrapper .survival-showcase-description {
-    position: absolute;
-    height: 100%;
-    z-index: 1;
-    text-align: center;
+.showcase-wrapper .nav-description {
+    height: 20vh;
     width: 100%;
+    position: relative;
+}
+
+.survival-showcase .showcase-wrapper .survival-showcase-description {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
     display: flex;
     color: #fff8dc;
-    margin-top: -10px;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
 }
 
 .survival-showcase .showcase-wrapper .survival-showcase-description .first-title {
@@ -81,7 +92,7 @@
 
 .survival-content .survival-main {
     width: 100%;
-    min-height: 100%;
+    min-height: 40vh;
     padding: 50px 0px;
     background: #000;
 }
@@ -227,6 +238,27 @@
 }
 
 @media screen and (max-width: 768px) {
+    .survival-showcase {
+        height: 20vh;
+    }
+    .survival-showcase .showcase-wrapper .survival-nav {
+        flex-direction: row;
+        height: 10vh;
+    }
+    .showcase-wrapper .nav-description {
+        height: 10vh;
+    }
+    .survival-showcase .showcase-wrapper .nav-description .survival-showcase-description {
+        margin-top: 20px;
+    }
+    .survival-showcase .showcase-wrapper .nav-description .survival-showcase-description .first-title {
+        font-size: 25px;
+    }
+    .survival-showcase .showcase-wrapper .nav-description .survival-showcase-description .under-title {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
     .survival-content .survival-showcase .showcase-wrapper .survival-showcase-description {
         margin-top: 20px;
     }
@@ -267,5 +299,19 @@
     .survival-content .survival-main .steps-quotes-wrapper .steps-quotes .quotes {
         width: 90%;
         margin: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .survival-showcase .showcase-wrapper .survival-nav {
+        justify-content: left;
+        height: 10vh;
+        align-items: center;
+    }
+    .survival-showcase .showcase-wrapper .survival-nav .logo {
+        font-size: 9px;
+    }
+    .survival-showcase .showcase-wrapper .survival-nav .menu {
+        margin: 0 auto;
     }
 }
